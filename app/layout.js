@@ -1,3 +1,4 @@
+import MarqueeBanner from "@/components/UI/avail";
 import "./globals.css";
 
 
@@ -12,7 +13,7 @@ export default function RootLayout({ children }) {
       <body>
 
         {children}
-
+        <MarqueeBanner />
 
       </body>
     </html>
