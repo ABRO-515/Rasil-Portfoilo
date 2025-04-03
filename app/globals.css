@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+body{
+  background-color: #e6e4e4;
+}
+
+@font-face {
+  font-family: 'ali';
+  src: url('/Neue.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Optional: improves performance */
+}
+
+@font-face {
+  font-family: 'rasil';
+  src: url('/file.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* components/Button.module.css */
+.neue {
+  font-family: 'ali', sans-serif;
+}
+.file {
+  font-family: 'rasil', Arial, Helvetica, sans-serif;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.blink {
+  animation: blink 1.7s infinite;
+}
+
+@keyframes spin-y {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+.animate-spin-y {
+  animation: spin-y 7s linear infinite;
+  transform-style: preserve-3d;
+}
+
+::selection {
+  background: white;  /* Change highlight background */
+  color: black;   /* Change text color */
+  text-shadow: none;       /* Optional: removes text shadow if exists */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* For WebKit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust width */
+  border-radius: 10px; /* Ensures rounded edges */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Track background */
+  border-radius: 10px; /* Rounded edges for track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray; /* Scrollbar color */
+  border-radius: 20px; /* Fully rounded scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray; /* Color on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: gray transparent;
+}
