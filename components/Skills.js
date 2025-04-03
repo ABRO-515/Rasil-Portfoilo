@@ -7,7 +7,8 @@ const techStack = [
     { name: 'Tailwind', slug: 'tail' },
     { name: 'Javascript', slug: 'jsOnly' },
     { name: 'Vercel', slug: 'vercel' },
-    // Add 10-12 items
+    { name: 'Shadcn', slug: 'shad' },
+    
 ];
 export default function SkillsTwo() {
 
