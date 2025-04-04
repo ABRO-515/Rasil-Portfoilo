@@ -7,6 +7,7 @@ const techStack = [
     { name: 'Tailwind', slug: 'tail' },
     { name: 'Javascript', slug: 'jsOnly' },
     { name: 'Vercel', slug: 'vercel' },
+    { name: 'JEST', slug: 'jest' },
     { name: 'Shadcn', slug: 'shad' },
     
 ];

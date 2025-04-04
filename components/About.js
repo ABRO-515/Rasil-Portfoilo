@@ -8,10 +8,10 @@ export default function About() {
         <div className="md:flex gap-8 justify-center items-center " >
     <div className="flex items-center justify-center" >
             <Image
-      src="/images/abro.jpeg"
+      src="/images/abro2.jpeg"
       width={500}
       height={500}
-      className="h-[27rem] w-full max-w-[18rem] "
+      className="h-[27rem] w-full grayscale transition-all object-contain rounded-lg hover:grayscale-0 max-w-[18rem] "
       alt="Picture of the author"
     />
     </div>
