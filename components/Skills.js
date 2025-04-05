@@ -38,7 +38,7 @@ export default function SkillsTwo() {
             </div>
 
             <div className="space-y-8  my-8 ">
-                <h2 className="text-4xl file font-bold text-center">Skills</h2>
+            <h2 className="text-center uppercase file text-[1.6rem] md:text-[3.2rem] lg:text-[4.2rem] xl:text-[6rem] font-bold mb-12 file">Skills</h2>
 
 
                 {/* Skill Cloud */}

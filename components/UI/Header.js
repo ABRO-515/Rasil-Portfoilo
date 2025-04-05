@@ -62,22 +62,22 @@ export default function Header() {
             </div>
 
 
-            <ScrollLink to="Home" smooth={true} duration={1000} onClick={handleMenu} ><li className="list-none hover:text-gray-400" >Home</li></ScrollLink>
-            <ScrollLink to="About" smooth={true} duration={1000} onClick={handleMenu} ><li className="list-none hover:text-gray-400" >About</li></ScrollLink>
-            <ScrollLink to="Projects" smooth={true} duration={1000} onClick={handleMenu} ><li className="list-none hover:text-gray-400" >Projects</li></ScrollLink>
-            <ScrollLink to="Skills" smooth={true} duration={1000} onClick={handleMenu} ><li className="list-none hover:text-gray-400" >Skills</li></ScrollLink>
+            <ScrollLink to="Home" smooth={true} duration={450} onClick={handleMenu} ><li className="list-none hover:text-gray-400" >Home</li></ScrollLink>
+            <ScrollLink to="About" smooth={true} duration={450} onClick={handleMenu} ><li className="list-none hover:text-gray-400" >About</li></ScrollLink>
+            <ScrollLink to="Projects" smooth={true} duration={450} onClick={handleMenu} ><li className="list-none hover:text-gray-400" >Projects</li></ScrollLink>
 
 
 
             <div className="w-full h-[7.5px] bg-white" >  </div>
+            <ScrollLink to="Skills" smooth={true} duration={450} onClick={handleMenu} ><li className="list-none hover:text-gray-400" >Skills</li></ScrollLink>
             <a
               href="/resume.pdf"  // PDF file should be in public folder
               className="hover:text-gray-400"
               download="Rasil-Abro-Resume.pdf"
               target="_blank" rel="noopener noreferrer">Resume</a>
 
-            <ScrollLink to="Now" smooth={true} duration={1000} onClick={handleMenu} ><li className="list-none hover:text-gray-400" >Now</li></ScrollLink>
-            <a href="#" className="hover:text-gray-400 text-black">Contact</a>
+            <ScrollLink to="Now" smooth={true} duration={450} onClick={handleMenu} ><li className="list-none hover:text-gray-400" >Now</li></ScrollLink>
+            
             <div className="w-full h-[7.5px] bg-white" >  </div>
             <h2>Socials</h2>
             <div className="flex gap-5" >
