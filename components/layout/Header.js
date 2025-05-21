@@ -5,10 +5,11 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { useState } from "react";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
-import Clock from "./Clock"
+
 import { Link as ScrollLink } from 'react-scroll';
 import { useEffect } from "react"; // ⬅ Import useEffect
 import Link from "next/link";
+import Clock from "../UI/Clock";
 
 export default function Header() {
 
@@ -58,7 +59,7 @@ export default function Header() {
             <div className="flex font-light gap-2 items-center" >
               <h3>KHI | PAK</h3>
               <div className="invert-75 text-sm rounded-full ml-3 blink">⚫</div>
-              <Clock />
+            <Clock />
             </div>
 
 

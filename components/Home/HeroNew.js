@@ -1,6 +1,7 @@
 import Image from "next/image";
-import Marque from "./UI/Marque";
+
 import { FaConnectdevelop } from "react-icons/fa";
+import Marque from "../UI/Marque";
 
 export default function HeroNew() {
   return (

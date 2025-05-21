@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.6.2",
     "gsap": "^3.12.7",
     "lenis": "^1.2.3",

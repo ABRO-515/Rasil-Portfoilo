@@ -8,24 +8,41 @@ export default function Projects() {
 
     const obj = [
         {
-            title: "E-Commerce",
+            name: "E-Commerce",
+            year: "2025",
             image: "/projects/e-com.png",
+            slug: "exclusive-ecom",
             sr: "01",
-            link: "https://exclusive-e-com-rasil.vercel.app/"
         },
         {
-            title: "Real Estate",
+            name: "Real-Estate",
+            year: "2025",
             image: "/projects/real.png",
+            slug: "zarghab-real-estate",
             sr: "02",
-            link: "https://zarghab-real-estate.vercel.app/pages/admin/dashboard/Total%20Plots%20Booked"
-
         },
         {
-            title: "World Atlas",
-            image: "/projects/atlas.png",
+            name: "EZY Logistics",
+            year: "2025",
+            image: "/projects/EZY.png",
+            slug: "ezy-logistics",
             sr: "03",
-            link: "https://worldatlas-dusky.vercel.app/"
-        }
+        },
+        {
+            name: "3D Book",
+            year: "2025",
+            image: "/projects/VR.png",
+            slug: "book-slider",
+            sr: "04",
+        },
+        {
+            name: "Creative",
+            year: "2025",
+            image: "/projects/cr.png",
+            slug: "creative-portfolio",
+            sr: "05",
+        },
+
     ]
     return (
         <main className="w-full h-full my-8 bg-[#e6e4e4]" id="Projects" >
@@ -41,20 +58,20 @@ export default function Projects() {
                         <div className="flex flex-col ml-3 md:ml-0 gap-3 " >
                             <h4 className="w-fit " >[ {item.sr} ]</h4>
                             <h2 className="font-semibold w-fit sm:text-[1.3rem]" >{item.title}</h2>
-                            <Link href={`${item.link}`} > <div className="bg-white h-fit hover:bg-black cursor-pointer hover:text-white  w-fit p-3 rounded-full border" >
+                            <Link href={`/projects/${item.slug}`} > <div className="bg-white h-fit hover:bg-black cursor-pointer hover:text-white  w-fit p-3 rounded-full border" >
 
                                 <FaArrowRightLong />
                             </div> </Link>
 
                             <span className="w-fit md:hidden mt-36" >
-                                [ Year ] <br /> 2025
+                                [ Year ] <br /> {item.slug}
                             </span>
                         </div>
 
 
                         {/* Image */}
 
-                        <Link href={`${item.link}`} >  <Image
+                        <Link href={`/projects/${item.slug}`} >  <Image
                             src={`${item.image}`}
                             width={500}
                             height={500}
@@ -73,7 +90,7 @@ export default function Projects() {
                     <h3 className="uppercase file text-[1.6rem] md:text-[3.2rem] lg:text-[4.2rem] xl:text-[6rem] mb-8" >SOME  Featured Work</h3>
                 </div>
 
-          
+
 
 
 

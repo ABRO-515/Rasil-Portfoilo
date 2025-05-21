@@ -1,30 +1,29 @@
 
-import About from "@/components/About";
-import HeroNew from "@/components/HeroNew";
-import Now from "@/components/Now";
+import About from "@/components/Home/About";
+import HeroNew from "@/components/Home/HeroNew";
+import Now from "@/components/Home/Now";
+import Projects from "@/components/Home/Projects";
+import ProjectsLG from "@/components/Home/ProjectsLG";
+import SkillsTwo from "@/components/Home/Skills";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
+import HeaderLG from "@/components/layout/HeaderLG";
 
-import Projects from "@/components/Projects";
-import ProjectsLG from "@/components/ProjectsLG";
-import Skills from "@/components/Skills";
-import Footer from "@/components/UI/Footer";
-import Header from "@/components/UI/Header";
-import HeaderLG from "@/components/UI/HeaderLG";
 
 
 
 export default function page() {
   return (
     <div>
-      <Header />
-      <HeaderLG />
+     
       <HeroNew />
       {/* <Test /> */}
       <About />
       <Projects />
       <ProjectsLG />
-      <Skills />
+      <SkillsTwo />
       <Now />
-      <Footer />
+  
 
     </div>
   )

@@ -9,6 +9,8 @@ const techStack = [
     { name: 'Vercel', slug: 'vercel' },
     { name: 'JEST', slug: 'jest' },
     { name: 'Shadcn', slug: 'shad' },
+    { name: 'Three.js', slug: 'three' },
+    { name: 'Matter.js', slug: 'matter-js' },
     
 ];
 export default function SkillsTwo() {
