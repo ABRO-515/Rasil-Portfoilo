@@ -2,18 +2,22 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
+import { projects } from "@/app/projects/projectsData";
+import { useParams } from 'next/navigation';
 
-const images = [
-  'https://media.giphy.com/media/VHh8vqt8wldhm/giphy.gif',
-  '/images/1.png',
-  '/images/2.png',
-  '/images/3.png',
-  '/images/4.png',
 
-];
+
 
 export default function Gallery() {
+  const params = useParams();
+  const slug = params?.slug;
+
+  const project = projects[slug]; // ✅ Moved this after slug is declared
+  if (!project) return <div>Project not found</div>;
+
+  const images = [project.img1, project.img2, project.img3, project.img4];
   const [selectedImage, setSelectedImage] = useState(images[0]);
+
 
   return (
     <div className="flex flex-col items-center max-w-4xl mx-auto px-4 py-6">

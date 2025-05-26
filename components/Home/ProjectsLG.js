@@ -30,10 +30,10 @@ const awards = [
     slug: "book-slider",
   },
   {
-    name: "Creative",
+    name: "Soch Ai",
     year: "2025",
-    image: "/projects/cr.png",
-    slug: "creative-portfolio",
+    image: "/mockups/soch/laptop.png",
+    slug: "soch-ai-chatbot",
   },
 ];
 

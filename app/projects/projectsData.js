@@ -14,7 +14,11 @@ export const projects = {
     keyFeature2: "Integrated search and filter across all categories.",
     keyFeature3: "Checkout button triggers animated truck loading.",
     keyFeature4: "State managed using React's Context API system.",
-    challenge: "The main challenge was using Context API and setting up dynamic routing, as it was my first complex project. Initially, I didn’t know how to structure the logic, but after exploring documentation and experimenting, I was able to implement both features successfully and gained confidence in React architecture."
+    challenge: "The main challenge was using Context API and setting up dynamic routing, as it was my first complex project. Initially, I didn’t know how to structure the logic, but after exploring documentation and experimenting, I was able to implement both features successfully and gained confidence in React architecture.",
+    img1: "/gifsPort/e-commerce.gif",
+    img2: "/mockups/ecom/laptop.png",
+    img3: "/mockups/ecom/iPhone.png",
+    img4: "/images/4.png",
 
 
   },
@@ -33,6 +37,10 @@ export const projects = {
     keyFeature3: "Smart filters for instant plot search by name or type.",
     keyFeature4: "Client-side PDF export for bookings and receipts.",
     challenge: "This was my first project in Next.js, and I was new to SSR, ISR, and CSR concepts. Handling so many pages while learning these rendering methods was overwhelming. It was also my first time working with an API and implementing full CRUD operations, which made the experience very educational.",
+    img1: "/gifsPort/real-estate.gif",
+    img2: "/mockups/real-estate/laptop.png",
+    img3: "/mockups/real-estate/iPhone.png",
+    img4: "/images/4.png",
 
   },
   "ezy-logistics": {
@@ -50,7 +58,10 @@ export const projects = {
     keyFeature3: "Designed modern UI reflecting brand's identity.",
     keyFeature4: "Added 3D ship model matching 3PL logistics service theme.",
     challenge: "This project was straightforward for me, with no significant challenges encountered. My prior experience with animations and performance optimization allowed me to implement smooth transitions and 3D interactions efficiently, even across different devices and screen sizes.",
-
+    img1: "/gifsPort/ezy.gif",
+    img2: "/mockups/ezzy/laptop.png",
+    img3: "/mockups/ezzy/iPhone.png",
+    img4: "/images/4.png",
 
   },
   "book-slider": {
@@ -63,23 +74,38 @@ export const projects = {
     tech2: "React.js",
     tech3: "R3F",
     tech4: "Tailwind CSS",
-     keyFeature1: "Built a fully interactive 3D book using Three.js and React Three Fiber framework.",
+    keyFeature1: "Built a fully interactive 3D book using Three.js and React Three Fiber framework.",
     keyFeature2: "Engraved my name onto the front and back covers for a personal touch.",
     keyFeature3: "Styled clean and responsive UI using Tailwind CSS with a modern layout approach.",
     keyFeature4: "Achieved smooth and realistic 3D page slider transitions for immersive user interaction.",
     challenge: "This was my first time working with 3D and React Three Fiber. Understanding camera angles, lighting, and mesh interactions was difficult at first. I spent hours watching tutorials and debugging Three.js quirks. It was challenging but incredibly rewarding to turn a 3D concept into something smooth, personalized, and fully interactive.",
+    img1: "/gifsPort/book.gif",
+    img2: "/mockups/3D-book/laptop.png",
+    img3: "/mockups/3D-book/iPhone.png",
+    img4: "/images/4.png",
 
   },
-  "creative-portfolio": {
-    name: "Creative",
-    year: "2025",
-    image: "/projects/cr.png",
-    link: "https://creative-portfolio-dark.vercel.app/",
-    description: "Creative portfolio showcasing design experiments and effects.",
-    tech1: "Next.js",
-    tech2: "React.js",
-    tech3: "Three.js",
-    tech4: "Framer-Motion",
 
-  }
+  "soch-ai-chatbot": {
+    name: "Soch AI Chatbot",
+    year: "2025",
+    image: "/mockups/soch/laptop.png",
+    link: "https://sochai.ai/",
+    description: "Soch AI is an immersive landing page promoting a chatbot app similar to ChatGPT. Built with Three.js and Matter.js, it features dynamic 3D visuals and interactive physics-based animations where cards fall from the sky and scatter on impact. The layout emphasizes modern UI principles, responsive design, and playful interactivity. This project combines stunning visuals, practical performance, and real-time user engagement, encouraging downloads with an entertaining and highly creative interface that mimics real-world physics while delivering a futuristic digital experience. Every element was crafted with user behavior and experience in mind to maximize user retention and interactivity.",
+    tech1: "Three.js",
+    tech2: "React.js",
+    tech3: "Matter.js",
+    tech4: "Tailwind CSS",
+    keyFeature1: "Interactive physics-based cards fall and scatter dynamically.",
+    keyFeature2: "Three.js renders imported 3D models with precision.",
+    keyFeature3: "Responsive UI optimized for desktop and mobile.",
+    keyFeature4: "Landing page built to maximize user downloads.",
+    challenge: "I faced a serious issue with capsule collisions. Despite trying many solutions, nothing worked. After posting on GitHub and StackOverflow, a senior engineer from San Francisco offered help. Together, we debugged and solved the physics problem, making the animations behave correctly. It taught me how to approach collaborative debugging and strengthened my problem-solving skills in real-world animation issues.",
+    img1: "/gifsPort/soch ai.gif",
+    img2: "/mockups/soch/laptop.png",
+    img3: "/mockups/soch/iPhone.png",
+    img4: "/images/4.png",
+
+  },
+
 };
