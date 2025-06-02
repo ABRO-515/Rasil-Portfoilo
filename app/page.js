@@ -6,12 +6,14 @@ import ProjectsLG from "@/components/Home/ProjectsLG";
 import SkillsTwo from "@/components/Home/Skills";
 import ScrollToSectionClient from "./ScrollToSectionClient";
 import { Suspense } from "react";
+import ParticleSphereCanvas from "@/components/models/ParticleSphereCanvas";
 
 export default function Page() {
   return (
     <div>
       <HeroNew />
       <About />
+      
       <Projects />
       <ProjectsLG />
       <SkillsTwo />

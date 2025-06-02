@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { FaConnectdevelop } from "react-icons/fa";
 import Marque from "../UI/Marque";
+import ParticleSphereCanvas from "../models/ParticleSphereCanvas";
 
 export default function HeroNew() {
   return (
@@ -13,7 +14,8 @@ export default function HeroNew() {
          <h3 className="uppercase my-8 font-medium  w-[8rem] md:w-[10.8rem]  text-left ml-6 lg:ml-10 xl:ml-[7vw] 2xl:ml-24 mt-5 text-xs" >Welcome to my portfolio! I love building responsive and user-friendly web interfaces while honing my skills in modern web technologies.</h3>
          <div className="flex justify-end mr-8 my-8  xl:my-0 " >
 
-         <FaConnectdevelop  className='animate-spin-y text-9xl xl:text-[15rem] text-[#44403c] '  />
+<ParticleSphereCanvas/>
+         
          </div>
          </div>
 
