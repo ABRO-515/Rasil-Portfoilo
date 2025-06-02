@@ -1,44 +1,40 @@
 "use client";
 
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
-
-import { Link as ScrollLink } from 'react-scroll';
-import { useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation"; // ✅ Add these
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import Clock from "../UI/Clock";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname(); // ✅ Get current path
-  const router = useRouter();     // ✅ For navigation
+  const pathname = usePathname();
+  const router = useRouter();
 
   const handleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleNavClick = (target) => {
+  const scrollOrRedirect = useCallback((section) => {
     setIsOpen(false);
+
     if (pathname === "/") {
-      // Dispatch scroll event if on home page
-      window.dispatchEvent(new CustomEvent("scrollToSection", { detail: target }));
+      const scroller = require("react-scroll").scroller;
+      scroller.scrollTo(section, {
+        duration: 500,
+        smooth: true,
+        offset: -80, // Adjust based on your sticky header height
+      });
     } else {
-      // Redirect to home with scrollTo param
-      router.push(`/?scrollTo=${target}`);
+      router.push(`/?scrollTo=${section}`);
     }
-  };
+  }, [pathname, router]);
 
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
     return () => {
       document.body.style.overflow = "auto";
     };
@@ -67,19 +63,25 @@ export default function Header() {
               <Clock />
             </div>
 
-            <li onClick={() => handleNavClick("Home")} className="list-none hover:text-gray-400 cursor-pointer">Home</li>
-            <li onClick={() => handleNavClick("About")} className="list-none hover:text-gray-400 cursor-pointer">About</li>
-            <li onClick={() => handleNavClick("Projects")} className="list-none hover:text-gray-400 cursor-pointer">Projects</li>
+            <li onClick={() => scrollOrRedirect("Home")} className="list-none hover:text-gray-400 cursor-pointer">Home</li>
+            <li onClick={() => scrollOrRedirect("About")} className="list-none hover:text-gray-400 cursor-pointer">About</li>
+            <li onClick={() => scrollOrRedirect("Projects")} className="list-none hover:text-gray-400 cursor-pointer">Projects</li>
 
             <div className="w-full h-[7.5px] bg-white"></div>
 
-            <li onClick={() => handleNavClick("Skills")} className="list-none hover:text-gray-400 cursor-pointer">Skills</li>
+            <li onClick={() => scrollOrRedirect("Skills")} className="list-none hover:text-gray-400 cursor-pointer">Skills</li>
+
             <a
               href="/resume.pdf"
               className="hover:text-gray-400"
               download="Rasil-Abro-Resume.pdf"
-              target="_blank" rel="noopener noreferrer">Resume</a>
-            <li onClick={() => handleNavClick("Now")} className="list-none hover:text-gray-400 cursor-pointer">Now</li>
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
+
+            <li onClick={() => scrollOrRedirect("Now")} className="list-none hover:text-gray-400 cursor-pointer">Now</li>
 
             <div className="w-full h-[7.5px] bg-white"></div>
             <h2>Socials</h2>

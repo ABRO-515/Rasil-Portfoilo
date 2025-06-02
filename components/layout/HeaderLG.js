@@ -1,38 +1,42 @@
-'use client';
-import { usePathname, useRouter } from 'next/navigation';
+"use client"
+import { Link as ScrollLink } from "react-scroll";
+import { usePathname, useRouter } from "next/navigation";
+import { useCallback } from "react";
 
 export default function HeaderLG() {
-  const router = useRouter();
   const pathname = usePathname();
+  const router = useRouter();
 
-  const handleScroll = (sectionId) => {
-    if (pathname === '/') {
-      // Trigger client-side event for scroll on same page
-      const event = new CustomEvent('scrollToSection', { detail: sectionId });
-      window.dispatchEvent(event);
+  const scrollOrRedirect = useCallback((section) => {
+    if (pathname === "/") {
+      const scroller = require("react-scroll").scroller;
+      scroller.scrollTo(section, {
+        duration: 500,
+        smooth: true,
+        offset: -80,
+      });
     } else {
-      // Navigate to home with query param
-      router.push(`/?scrollTo=${sectionId}`);
+      router.push(`/?scrollTo=${section}`);
     }
-  };
+  }, [pathname, router]);
 
   return (
     <main className="w-full h-full">
       <div className="bg-black lg:flex hidden px-16 my-3 py-3 items-center text-white mx-16 rounded-full justify-between">
-        <h1 className="text-2xl text-white file">R.A</h1>
+        <h1 className="text-2xl file">R.A</h1>
         <ul className="flex gap-4">
-          {['Home', 'About', 'Projects', 'Skills', 'Now'].map((item) => (
+          {["Home", "About", "Projects", "Skills", "Now"].map((section) => (
             <li
-              key={item}
-              className="list-none hover:text-gray-400 file text-white cursor-pointer"
-              onClick={() => handleScroll(item)}
+              key={section}
+              onClick={() => scrollOrRedirect(section)}
+              className="cursor-pointer file hover:text-gray-400"
             >
-              {item}
+              {section}
             </li>
           ))}
           <a
             href="/resume.pdf"
-            className="hover:text-gray-400 file cursor-pointer"
+            className="hover:text-gray-400 file"
             download="Rasil-Abro-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
