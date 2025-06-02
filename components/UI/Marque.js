@@ -2,15 +2,15 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 const MARQUEE_IMAGES = [
-  { src: "/images/1.png", width: 800, height: 400 },
-  { src: "/images/2.png", width: 800, height: 400 },
-  { src: "/images/3.png", width: 800, height: 400 },
-  { src: "/images/4.png", width: 800, height: 400 },
-  { src: "/images/5.png", width: 800, height: 400 },
-  { src: "/images/6.png", width: 800, height: 400 },
-  { src: "/images/7.png", width: 800, height: 400 },
-  { src: "/images/8.png", width: 800, height: 400 },
-  { src: "/images/9.png", width: 800, height: 400 }
+  { src: "/mockups/soch/laptop.webp", width: 800, height: 400 },
+  { src: "/mockups/ezzy/laptop.webp", width: 800, height: 400 },
+  { src: "/mockups/ecom/laptop.webp", width: 800, height: 400 },
+  { src: "/mockups/real-estate/laptop.webp", width: 800, height: 400 },
+  { src: "/mockups/3D-book/laptop.webp", width: 800, height: 400 },
+  { src: "/mockups/ezzy/Ipad.webp", width: 800, height: 400 },
+  { src: "/mockups/real-estate/iPhone.webp", width: 800, height: 400 },
+  { src: "/mockups/soch/iPhone.webp", width: 800, height: 400 },
+  { src: "/mockups/ezzy/iPhone.webp", width: 800, height: 400 }
 ];
 export default function Marque() {
 
@@ -19,7 +19,7 @@ export default function Marque() {
   return (
     <main className=" h-fit" >
       <Marquee pauseOnHover>
-        <div className="flex w-full border bg-[#524B41] " >
+        <div className="flex w-full border bg-[#1E1E20] " >
           {MARQUEE_IMAGES.map((img, i) => (
           
               <Image

@@ -54,7 +54,7 @@ export default function Footer() {
               <a href="mailto:rasilabro515@gmail.com">rasilabro515@gmail.com</a>
             </div>
             <button
-              className="flex items-center cursor-pointer space-x-2 bg-[#524B41] hover:bg-[#282622] text-white px-4 py-2 rounded-md transition-colors"
+              className="flex items-center cursor-pointer space-x-2 bg-[#484651] hover:bg-[#3f3e45] text-white px-4 py-2 rounded-md transition-colors"
               onClick={() => {
                 // PDF download logic here
                 const link = document.createElement('a');

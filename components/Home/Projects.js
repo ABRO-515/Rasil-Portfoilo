@@ -10,36 +10,36 @@ export default function Projects() {
         {
             name: "E-Commerce",
             year: "2025",
-            image: "/projects/e-com.png",
+            image: "/mockups/ecom/iPhone.webp",
             slug: "exclusive-ecom",
             sr: "01",
         },
         {
             name: "Real-Estate",
             year: "2025",
-            image: "/projects/real.png",
+            image: "/mockups/real-estate/iPhone.webp",
             slug: "zarghab-real-estate",
             sr: "02",
         },
         {
             name: "EZY Logistics",
             year: "2025",
-            image: "/projects/EZY.png",
+            image: "/mockups/ezzy/iPhone.webp",
             slug: "ezy-logistics",
             sr: "03",
         },
         {
             name: "3D Book",
             year: "2025",
-            image: "/projects/VR.png",
+            image: "/mockups/3D-book/iPhone.webp",
             slug: "book-slider",
             sr: "04",
         },
         {
-            name: "Creative",
+            name: "Soch Ai",
             year: "2025",
-            image: "/projects/cr.png",
-            slug: "creative-portfolio",
+            image: "/mockups/soch/iPhone.webp",
+            slug: "soch-ai-chatbot",
             sr: "05",
         },
 
@@ -58,13 +58,13 @@ export default function Projects() {
                         <div className="flex flex-col ml-3 md:ml-0 gap-3 " >
                             <h4 className="w-fit " >[ {item.sr} ]</h4>
                             <h2 className="font-semibold w-fit sm:text-[1.3rem]" >{item.title}</h2>
-                            <Link href={`/projects/${item.slug}`} > <div className="bg-white h-fit hover:bg-black cursor-pointer hover:text-white  w-fit p-3 rounded-full border" >
+                            <Link href={`/projects/${item.slug}`} > <div className="bg-white h-fit hover:bg-black cursor-pointer hover:text-white   w-fit p-3 rounded-full border" >
 
                                 <FaArrowRightLong />
                             </div> </Link>
 
                             <span className="w-fit md:hidden mt-36" >
-                                [ Year ] <br /> {item.slug}
+                                [ Year ] <br /> {item.year}
                             </span>
                         </div>
 
@@ -76,7 +76,7 @@ export default function Projects() {
                             width={500}
                             height={500}
                             alt="Picture of the author"
-                            className="w-full  h-[21rem] lg:mr-16 md:mr-12 xl:mr-32 max-w-[16rem] lg:h-[25rem] lg:max-w-[18rem]"
+                            className="w-full  h-[21rem] rounded-lg object-cover lg:mr-16 md:mr-12 xl:mr-32 max-w-[15rem] lg:h-[25rem] lg:max-w-[18rem]"
                         /></Link>
                         <span className="w-fit hidden md:block" >
                             [ Year ] <br /> 2025

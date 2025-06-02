@@ -18,7 +18,7 @@ export default function Now() {
       {/* Header */}
       <div className="flex items-center gap-3 mb-8 bg-[#e6e4e4] justify-center">
         <h2 className="text-[1.6rem] md:text-[3.2rem] lg:text-[4.2rem] text-center xl:text-[6rem] font-bold file tracking-tight">
-          What I'm Doing <span className="text-[#524B41]">Now</span>
+          What I'm Doing <span className="text-[#484651]">Now</span>
         </h2>
         <span className="text-sm text-gray-500 mt-2">(Updated: {lastUpdated})</span>
       </div>

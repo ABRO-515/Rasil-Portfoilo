@@ -8,31 +8,31 @@ const awards = [
   {
     name: "E-Commerce",
     year: "2025",
-    image: "/projects/e-com.png",
+    image: "/mockups/ecom/Ipad.webp",
     slug: "exclusive-ecom",
   },
   {
     name: "Real-Estate",
     year: "2025",
-    image: "/projects/real.png",
+    image: "/mockups/real-estate/Ipad.webp",
     slug: "zarghab-real-estate",
   },
   {
     name: "EZY Logistics",
     year: "2025",
-    image: "/projects/EZY.png",
+    image: "/mockups/ezzy/Ipad.webp",
     slug: "ezy-logistics",
   },
   {
     name: "3D Book",
     year: "2025",
-    image: "/projects/VR.png",
+    image: "/mockups/3D-book/Ipad.webp",
     slug: "book-slider",
   },
   {
     name: "Soch Ai",
     year: "2025",
-    image: "/mockups/soch/laptop.png",
+    image: "/mockups/soch/Ipad.webp",
     slug: "soch-ai-chatbot",
   },
 ];

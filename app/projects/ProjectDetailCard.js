@@ -32,10 +32,10 @@ export default function ProjectDetailCard({
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2 bg-[#524B41] hover:bg-[#282622] text-white text-sm md:text-base rounded-lg shadow transition-all"
+                className="inline-flex items-center gap-2 px-5 py-2 bg-[#484651] hover:bg-[#3f3e45] text-white text-sm md:text-base rounded-lg shadow transition-all"
               >
                 <MdOutlineInsertLink size={20} /> Live Demo
-              </a>
+              </a>  
             </div>
           )}
 
