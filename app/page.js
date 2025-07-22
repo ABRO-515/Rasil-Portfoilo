@@ -7,6 +7,7 @@ import SkillsTwo from "@/components/Home/Skills";
 import ScrollToSectionClient from "./ScrollToSectionClient";
 import { Suspense } from "react";
 import ParticleSphereCanvas from "@/components/models/ParticleSphereCanvas";
+import ConnectIcons from "../components/Home/ConnectIcons";
 
 export default function Page() {
   return (
@@ -23,6 +24,7 @@ export default function Page() {
       <Suspense fallback={null}>
         <ScrollToSectionClient />
       </Suspense>
+      <ConnectIcons />
     </div>
   );
 }
